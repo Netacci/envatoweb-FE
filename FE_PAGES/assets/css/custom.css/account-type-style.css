@@ -29,8 +29,8 @@ body{
 
 .left-content{
   background: var(--background-color);
-  background-image: url('../../images/aEllipse\ 2.svg'),
-                  url('../../images/aEllipse\ 3.svg');
+  background-image: url('../img/Ellipse\ 2.svg'),
+              url('../img/Ellipse\ 3.svg');
   background-repeat: no-repeat, no-repeat, no-repeat;
   background-position: left 70% top 0%, left -1% bottom -14%;
   background-size: 80%, 40%;
@@ -53,7 +53,7 @@ body{
 }
 
 .right-content{
-  background-image: url('../../images/polygon-details.svg');
+  background-image: url('../img/polygon.svg');
   background-position: right 0% top 0%;
   background-size: 41.6%;
   background-repeat: no-repeat;
@@ -113,7 +113,7 @@ body{
   .account-card{
       background: #fff;
       margin: auto;
-      width: 75%;
+      width: 90%;
       display: flex;
       justify-content: space-around;
       padding: 1rem 0;
@@ -150,6 +150,15 @@ body{
       text-align: justify;
   }
 
+  .account-card{
+      display: flex;
+      justify-content: space-around;
+      padding: 3rem 0;
+      width: 85%;
+      box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.05);
+      border-radius: 20px;
+  }
+
   .btn{
       border: none;
       width: 190px;
@@ -173,7 +182,7 @@ body{
 
   .account-content{
       margin: auto;
-      width: 70%;
+      width: 90%;
   }
   .account-card{
       display: flex;
@@ -186,50 +195,11 @@ body{
 
   .row-content p{
       font-size: 18px;
-      width: 120px;
+      width: 190px;
       color: var(--secondary-color);
   }
 }
 
-@media (max-width: 768px){
-  body{
-      height: 100vh;
-  }
-  .left-content{
-      background: var(--background-color);
-      background-image: url('../../images/aEllipse\ 2.svg'),
-                  url('../../images/aEllipse\ 3.svg');
-      background-repeat: no-repeat, no-repeat, no-repeat;
-      height: 100%;
-      background-position: left 10% top 0%, left -1% bottom -14%;
-      background-size: 80%, 40%;
-      overflow: hidden;
-  }
-  
-  .right-content {
-      background-position: right 0% top 0px;
-      background-size: 41.6%;
-      overflow: hidden;
-  }
-  .account-content{
-      margin: auto;
-      width: 90%;
-  }
-  .account-card{
-      display: flex;
-      padding: 3rem 1rem;
-      width: 100%;
-      box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.05);
-      border-radius: 20px;
-      margin-bottom: 4rem;
-  }
-  .account-card .row2{
-      padding-left: 2rem;
-  }
-  .account-card .row4{
-      padding-left: 2.5rem;
-  }
-}
 
 @media (min-width: 318px){
   .right-content {
@@ -239,11 +209,11 @@ body{
   }
   .account-content{
       margin: auto;
-      width: 300px;
+      width: 85%;
   }
   .account-card{
       display: flex;
-      padding: 3rem 1rem;
+      padding: 3rem 0.7rem;
       width: 100%;
       box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.05);
       border-radius: 20px;
@@ -254,5 +224,51 @@ body{
   }
   .account-card .row4{
       padding-left: 3rem;
+  }
+}
+
+@media (max-width: 768px){
+  body{
+      height: 100vh;
+  }
+  .left-content{
+      background: var(--background-color);
+      background-image: url('../img/Ellipse\ 2.svg'),
+                  url('../img/Ellipse\ 3.svg');
+      background-repeat: no-repeat, no-repeat, no-repeat;
+      height: 100%;
+      background-position: left 10% top 0%, left -1% bottom -14%;
+      background-size: 80%, 40%;
+      overflow: hidden;
+  }
+  
+  .right-content {
+      background-position: right 0% top 0px;
+      background-size: 41.6%;
+      height: 100%;
+      overflow: hidden;
+  }
+  .account-content{
+      margin: auto;
+      width: 75%;
+  }
+  .account-card{
+      display: flex;
+      flex-wrap: wrap;
+      /* text-align: center; */
+      padding: 2rem 1rem;
+      width: 100%;
+      box-shadow: 0px 4px 32px rgba(0, 0, 0, 0.05);
+      border-radius: 20px;
+      margin-bottom: 2rem;
+  }
+  .account-card .row2{
+      padding-left: 0rem !important;
+  }
+  .account-card .row3{
+      padding-right: 2rem !important;
+  }
+  .account-card .row4{
+      padding-left: 0rem !important;
   }
 }
